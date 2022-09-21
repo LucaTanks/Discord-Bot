@@ -1,6 +1,6 @@
-import {SlashCommandBuilder, CommandInteraction} from "discord.js";
+import { SlashCommandBuilder, CommandInteraction } from "discord.js";
 import Embeds from "../Services/EmbedService";
-import {Command} from "../Types/Command";
+import { Command } from "../Types/Command";
 
 
 export default class Ping extends Command {
@@ -12,6 +12,6 @@ export default class Ping extends Command {
 
     run = async (interaction: CommandInteraction): Promise<void> => {
         const embed = Embeds.info("Pong!", `My latency is ${interaction.client.ws.ping}ms`);
-        await interaction.reply({embeds: [embed], ephemeral: true});
+        await interaction.reply({ embeds: [embed], ephemeral: true });
     }
 }

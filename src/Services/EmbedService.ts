@@ -1,5 +1,5 @@
 import { EmbedBuilder, ColorResolvable } from 'discord.js';
-import {Envuments} from "envuments";
+import { Envuments } from "envuments";
 
 export default class Embeds {
 

@@ -1,4 +1,4 @@
-import {Event} from "../Types/Event";
+import { Event } from "../Types/Event";
 
 
 export default class Ready extends Event {

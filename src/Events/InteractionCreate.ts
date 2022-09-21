@@ -8,7 +8,6 @@ export default class InteractionCreate extends Event {
 
     run = (interaction: Interaction[]): Promise<void> => {
         const [int] = interaction;
-
         if (!int.isCommand()) return;
 
         const commandInteraction = int as CommandInteraction;
@@ -20,7 +19,7 @@ export default class InteractionCreate extends Event {
             this.client.logger.error(error);
             const embed = Embeds.error("Error", "There was an error while running the command.");
 
-            int.reply({embeds: [embed], ephemeral: true});
+            int.reply({ embeds: [embed], ephemeral: true });
         }
     };
 }
