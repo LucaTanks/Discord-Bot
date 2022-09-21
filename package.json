@@ -1,0 +1,21 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Simple Discord bot template",
+  "main": "build/index.js",
+  "author": "Luca <luca@lucatanks.xyz>",
+  "scripts": {
+    "dev": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./build/index.js\"",
+    "build": "tsc",
+    "start": "node ./build/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "discord.js": "^14.4.0",
+    "envuments": "^1.0.10",
+    "log4js": "^6.3.0",
+    "tsc-watch": "^5.0.3"
+  }
+}
