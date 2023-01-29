@@ -16,11 +16,11 @@ export default class Embeds {
     }
 
     static error(title: string, description: string, color: ColorResolvable = "#ff0000") {
-        return Embeds.base('<a:no:877286928922337401> ' + title, description, color);
+        return Embeds.base('❌ ' + title, description, color);
     }
 
     static success(title: string, description: string, color: ColorResolvable = "#00ff00") {
-        return Embeds.base('<a:yes:877286929715036170> ' + title, description, color);
+        return Embeds.base('✅ ' + title, description, color);
     }
 
 }
